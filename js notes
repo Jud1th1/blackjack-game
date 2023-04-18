@@ -1,0 +1,194 @@
+// 1. Create two variables, firstCard and secondCard. 
+// Set their values to a random number between 2-11
+let firstCard = 6
+let secondCard = 9 
+
+// 2. Create a variable, sum, and set it to the sum of the two cards
+let sum = firstCard + secondCard
+
+
+function getRandomCard() {//complete the get random number function
+    let randomNumer = Math.floor( Math.random()*13 ) + 1 
+    if (randomNumer > 10) {
+        return 10
+    } else if (randomNumer === 1) {
+        return 11
+    } else {
+        return randomNumer
+    }
+}
+
+// 3. set up our blackjack rules
+// if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
+function startGame() {
+    renderGame ()
+}
+
+function renderGame() {
+    // Create a for loop that renders out all the cards instead of just two
+    cardsEl.textContent = "Cards: "
+
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+
+    sumEl.textContent = "Sum: " + sum
+if (sum < 21) {
+    message = "Do you want to draw a new card?" 😉
+}
+// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
+else if (sum === 21){ //3 equal marks means STRICTLY EQUAL. (EXACT VALUE)
+    message = "Woohoo! You've got Blackjack!" 😝🎉
+    hasBlackJack = true
+}
+// else -> "You're out of the game! 😭"
+else (sum > 21){
+    message = "You're out of the game!😭"
+    isAlive = false
+}
+
+    messageEl.textContent = message
+}
+
+//4.Cash out the money - introduce a new variable that keeps the state of the game 
+    let hasBlackJack = false
+    // CASH OUT!
+    console.log(hasBlackJack)
+
+// 5. Create a variable called isAlive and assign it to true
+    let isAlive = true
+// 6. Log it out to check that you're doing it right
+    console.log(isAlive)
+
+//7. Declare a variable called message and assign its value to an empty string
+    let message = ""
+//8. Reassign the message variable to the string we're logging out
+    //change console.log to message =
+//9. Log it out 
+    console.log(message)
+
+//10.Create a startGame() function. Move the conditional inside the body of the function.
+    //function startGame() 
+
+//Display the game 
+// 1. Store the message-el paragraph in a variable called messageEL
+    let messageEL = document.getElementById("message-el")
+    console.log(messageEl)
+
+// 2. Display the message in the messageEl using messageEl.textContent
+    //messageEl.textContent = message
+    
+//3. Find the sum- Store the sum paragraph in a variable called SumEl
+    let sumEl = document.getElementById("sum-el")
+    console.log(sumEl)
+    // Render the sum on the page using this format -> "Sum: 14"
+    // sumEl.textContent = "Sum: " + sum //added to line 12
+    // You can also do this with querySelector but this is a more board because we are asking to find the elements selector 
+
+//4. Display the cards (Follow same process as above step3)
+    let cardsEl = document.getElementById("cards-el")
+    console.log(sumEl)
+
+//5. Create new card button so you can draw from the deck
+    function newCard() {
+        console.log()
+    
+    //We want to be able to draw a new card, add it to the sum and recode code inside start game function so sum is added to the page 
+//6. Create card variable 
+    let card = 5
+     //Add the new card to the sum variable
+     sum += card
+     //Call startGame()
+     startGame()
+    }
+
+//change the name of startGame to renderGame for clarity
+//7. Create a new function called startGame() that calls renderGame()
+    function startGame() {
+        renderGame()
+    }
+
+//8. render out ALL cards we have - create an array 
+    let cards = [firstCard, secondCard] // array - ordered list of items
+        // render out firstCard and secondCard
+        cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+        // render out ALL the cards we have
+        sumEl.textContent = "Sum: " + sum
+
+//9.Create a new array - cards - that contains firstCard and secondCard
+    let cards = [firstCard, secondCard]
+    //Refer to the cards array when rendering out the cards
+   //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1] //change firstCard and secondCard to cards[0] and cards [1]
+
+//10.Push New card to array 
+function newCard() {
+    let card = 6
+    sum += card
+    // Push the card to the cards array
+    cards.push(card)
+    console.log(cards)
+    renderGame()
+}
+
+//11. Create a for loop that renders out all the cards instead of just two and add a space
+    //you can add a space by concatenating + " "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+
+//12. Create a function to get a random card value (for this instance let's get the number 5)
+    function getRandomCard() {
+        return 5
+    }
+    // Use getRandomCard() to set the values of firstCard and secondCard
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+
+function newCard() {
+    // Use the getRandomCard() to set the value of card
+    let card = 6
+    sum += card
+    cards.push(card)
+    console.log(cards)
+    renderGame()
+}
+
+// 13.Make this function return a random number between 1 and 13
+    function getRandomCard() {
+        return Math.floor( Math.random()*13 ) + 1 // 1-13
+    }
+
+//14.Fix new card to stop it from letting user to continue getting cards after a loss
+    //Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    //add conditions to run this code 
+    function newCard() {
+        //she has to be alive so:
+        if (isAlive === true && hasBlackJack === false){
+            //then the dealer should allow to get a new card
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame() 
+        }
+    }
+
+    //Add chips to the game! 
+    let playerName = "Per"
+    let playerChips = 145
+
+    let playerEl = document.getElementById("player-el")
+    playerEl.textContent = playerName + ": $" + playerChips
+    //Group the name and chips together 
+    let player = {
+        name: "Per",
+        chips: 145
+    }
+
+    //15. Use an object to store player data
+        //Create the player object. Give it two keys, name and chips, and set their values
+        //Grab ahold of the player-el paragraph and store it in a variable called playerEl
+        let playerEl = document.getElementById("player-el")
+
+        console.log(player)
+        //Render the player's name and chips in playerEl
+        playerEl.textContent = player.name + ": $" + player.chips

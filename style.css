@@ -1,0 +1,55 @@
+body {
+    padding: 0;
+    font-family: 'Noto Serif Hebrew', serif;
+    color: whitesmoke;
+    background-image: url("./bkgd-dark.jpg");
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2em;
+    margin: auto;
+    margin-top: 10em;
+    width: 70%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 6px 5px 6px #888888;
+    text-align: center;
+}
+
+h1 {
+    color: #E5D1B3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button{
+    color: gray;
+    width: 150px;
+    background-color: #E5D1B3;
+    box-shadow: 1px 1px 1px 1px goldenrod;
+    border: none;
+    border-radius: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+button:hover{
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url("./bkgd-light\ \(1\).jpg");
+        max-height: 100%;
+    }
+}
