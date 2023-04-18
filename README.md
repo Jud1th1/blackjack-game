@@ -35,13 +35,13 @@ Users should be able to:
 - Live Site URL: https://remarkable-blackjack-game.netlify.app/
 
 ## My process
--	To begin with I followed the tutorial to lay out my html and css
--	There were JS practice throughout to help understand the concepts we would be using which helped with understanding my JS set up
+-	To begin with I followed the Scrimba tutorial to lay out my html and css
+-	There were JS practices throughout to help understand the concepts we would be using, which helped with understanding my JS set up
 -	We started off by creating two variables for our cards and and setting the sum of the two cards
--	We crated blackjack rules such as:
--	if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
--	// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
--	// else -> "You're out of the game! 😭"
+-	We created blackjack rules such as:
+  -	if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
+  -	// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
+  -	// else -> "You're out of the game! 😭"
 -	Then we introduced a new variable that keeps the state of the game so we know if our player has Blackjack 
 -	If our player is ‘alive’ we assign a variable to true to allow the ‘dealer’ to continue dealing cards
 -	We reassigned the message variable to the string to log it out
