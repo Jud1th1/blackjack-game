@@ -39,18 +39,17 @@ Users should be able to:
 -	There were JS practices throughout to help understand the concepts we would be using, which helped with understanding my JS set up
 -	We started off by creating two variables for our cards and and setting the sum of the two cards
 -	We created blackjack rules such as:
-  -	if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
-  -	// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
+  -	// if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
+  -	// else if exactly 21 -> "Woohoo! You've got Blackjack! 🥳"
   -	// else -> "You're out of the game! 😭"
 -	Then we introduced a new variable that keeps the state of the game so we know if our player has Blackjack 
 -	If our player is ‘alive’ we assign a variable to true to allow the ‘dealer’ to continue dealing cards
 -	We reassigned the message variable to the string to log it out
--	Then we crated a startGame function and started to set up the game display, so allowing JS to store messages, display them, find sum, and display our cards using functions and getElementby Id
+-	Then we created a startGame function and started to set up the game display, so allowing JS to store messages, display them, find sum, and display our cards using functions and getElementbyId
 -	We created a new Card button that would be able to draw random cards as created a for loop that renders out all the cards instead of just two 
--	We fixed the new card function to stop it from letting user to continue getting cards after a loss
--	Then finally we added another variable called chips to the game which we grouped with the players name – so we created an an object to store player data, gave it two keys, name and chips, and set their values
--	Then I added some final styling edits such as a new image to the background and a box shadow around the container of my game. I changed some colors and fonts and made sure the game was responsive for mobile as well. 
-
+-	We fixed the new card function to stop it from letting the user to continue getting cards after a loss
+-	Then finally we added another variable called chips to the game which we grouped with the players name – so we created an object to store player data, gave it two keys, name, and chips, and set their values
+-	Then I added some final styling edits such as a new image to the background and a box shadow around the container of my game. I changed some colors and fonts and made sure the game was responsive for mobile as well.
 
 
 ### Built with
