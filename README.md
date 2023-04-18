@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Jud1th1/insure-landing-page
-- Live Site URL: https://insure-insurancepage.netlify.app/
+- Solution URL: https://github.com/Jud1th1/blackjack-game
+- Live Site URL: https://remarkable-blackjack-game.netlify.app/
 
 ## My process
 -	To begin with I followed the tutorial to lay out my html and css
